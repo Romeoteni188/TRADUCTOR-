@@ -1,0 +1,12 @@
+//para usar gin debemos de crear el archivo
+//go.mod y poner esta linea de codigo:
+module github.com/usuario/proyecto
+
+go 1.17
+//con eso ya pondemos intalar cualquier 
+//paquete o libreria
+//con el framework gin
+go get -u github.com/gin-gonic/gin
+//con gin ya podemos ejecutar el 
+//comando 
+gin run inicio.go

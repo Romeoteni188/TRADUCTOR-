@@ -1,0 +1,18 @@
+package main
+
+import (
+	"net/http"
+
+	"github.com/gin-gonic/gin"
+)
+
+func main() {
+	// Crea una nueva instancia de motor Gin
+	r := gin.Default()
+
+	// Ruta para servir archivos estáticos desde el directorio "src"
+	r.StaticFS("/", http.Dir("./src"))
+
+	// Inicia el servidor en el puerto 3000
+	r.Run(":3000")
+}

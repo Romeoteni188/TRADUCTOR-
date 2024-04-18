@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../estilos.css">
+    <!--Iconos-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="../estilos/style.css">
+    <title>FORMULARIO DE REGISTRO E INICIO DE SESION</title>
+</head>
+<body>
+    
+    <!--Menu de interaccion registrarse-->
+    <div class="container-form register">
+        <div class="information">
+            <div class="info-childs">
+                <h2>¡¡Bienvenidos!!</h2>
+                <p>Para poder realizar tus aportes, por favor inicia sesión con tus datos.</p>
+                <input type="button" value="Iniciar Sesión" id="sign-in">
+            </div>
+        </div>
+        <!--Formulario de registro-->
+        <div class="form-information">
+            <div class="form-information-childs">
+                <h2>Crear una Cuenta</h2>
+                <div class="icons">
+                    <i class='bx bxl-google'></i> <!--icono de google-->
+                    <i class='bx bxl-facebook-circle'></i> <!--icono de facebook-->
+                    <i class='bx bxl-linkedin'></i> <!--icono de linkedin-->
+                </div>
+                <p>o usa tu correo electrónico para registrarte</p>
+                <form class="form-register" id="registerForm">
+                    <label>
+                        <i class='bx bx-user' ></i>
+                        <input type="text" name="name" id="name" placeholder="Nombre Completo">
+                    </label>
+                    <label>
+                        <i class='bx bx-envelope' ></i>
+                        <input type="email" name="email" id="email" placeholder="Correo Electrónico">
+                    </label>
+                    <label>
+                        <i class='bx bx-lock-alt' ></i>
+                        <input type="password" name="password" id="password" placeholder="Contraseña">
+                    </label>
+                    <input type="submit" value="Registrarse">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--Menu de interacción inicio de sesión-->
+    <div class="container-form login hide">
+        <div class="information">
+            <div class="info-childs">
+                <h2>¡¡Bienvenido nuevamente!!</h2>
+                <p>Si aún no tienes una cuenta, por favor regístrate aquí.</p>
+                <input type="button" value="Registrarse" id="sign-up">
+            </div>
+        </div>
+        <!--Formulario de inicio de sesión-->
+        <div class="form-information">
+            <div class="form-information-childs">
+                <h2>Iniciar Sesión</h2>
+                <div class="icons">
+                    <i class='bx bxl-google'></i> <!--icono de google-->
+                    <i class='bx bxl-facebook-circle'></i> <!--icono de facebook-->
+                    <i class='bx bxl-linkedin'></i> <!--icono de linkedin-->
+                </div>
+                <p>o inicia sesión con una cuenta</p>
+                <form class="form-login">
+                    <label>
+                        <i class='bx bx-envelope' ></i>
+                        <input type="email" name="email" placeholder="Correo Electrónico">
+                    </label>
+                    <label>
+                        <i class='bx bx-lock-alt' ></i>
+                        <input type="password" name="password" placeholder="Contraseña">
+                    </label>
+                    <input type="submit" value="Iniciar Sesión">
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="../js/register.js"></script>
+</body>
+</html>
